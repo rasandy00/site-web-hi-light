@@ -1,0 +1,376 @@
+/* ===========================
+   Hi'Light - Style Principal
+   =========================== */
+
+/* --- RESET DE BASE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Alegreya', serif;
+  background-color: #f9f3ec;
+  color: #5a4633;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   NAVBAR
+   =========================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.brand-name {
+  font-family: 'Alice', serif;
+  font-size: 1.4em;
+  color: #5a4633;
+  letter-spacing: 1px;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: #5a4633;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #b27a4e;
+}
+
+.cta {
+  background-color: #b27a4e;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.cta:hover {
+  background-color: #5a4633;
+}
+
+/* ===========================
+   HERO (COUVERTURE)
+   =========================== */
+.hero {
+  margin-top: 100px; /* espace sous le header */
+  text-align: center;
+  position: relative;
+}
+
+.hero-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===========================
+   SLOGAN
+   =========================== */
+.slogan-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.slogan-section h2 {
+  font-family: 'Alice', serif;
+  font-size: 2em;
+  font-style: italic;
+  color: #5a4633;
+}
+
+/* ===========================
+   SECTIONS GÉNÉRALES
+   =========================== */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.section.alt {
+  background-color: #f9f3ec;
+}
+
+.section h2 {
+  font-family: 'Alice', serif;
+  font-size: 2em;
+  color: #5a4633;
+  margin-bottom: 50px;
+}
+
+/* ===========================
+   SERVICES
+   =========================== */
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 30px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-family: 'Alice', serif;
+  color: #b27a4e;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  color: #5a4633;
+}
+
+/* ===========================
+   ÉQUIPE
+   =========================== */
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.member img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.member h4 {
+  margin-top: 15px;
+  font-family: 'Alice', serif;
+  font-size: 1.2em;
+}
+
+.member p {
+  color: #b27a4e;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+/* ===========================
+   SECTION BRILLER
+   =========================== */
+#briller {
+  background-color: #fff;
+  text-align: center;
+}
+
+#briller h2 {
+  font-family: 'Alice', serif;
+  font-size: 2em;
+  color: #5a4633;
+  margin-bottom: 60px;
+}
+
+.briller-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.briller-block.inverse {
+  flex-direction: row-reverse;
+}
+
+.briller-image img {
+  width: 450px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.briller-text {
+  max-width: 600px;
+}
+
+.briller-text p {
+  font-family: 'Alegreya', serif;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #5a4633;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .briller-block {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .briller-block.inverse {
+    flex-direction: column;
+  }
+
+  .briller-image img {
+    width: 90%;
+  }
+
+  .briller-text {
+    max-width: 90%;
+  }
+}
+
+/* ===========================
+   PARTENAIRES
+   =========================== */
+#partenaires h2 {
+  font-family: 'Alice', serif;
+  font-size: 1.8em;
+  color: #5a4633;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+   .partenaires-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.partenaires-row img {
+  width: 130px;
+  height: auto;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.partenaires-row img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* ===========================
+   CONTACT
+   =========================== */
+#contact {
+  background-color: #fff;
+}
+
+.contact-info {
+  margin-top: 40px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  color: #5a4633;
+}
+
+.contact-info a {
+  color: #b27a4e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   DEVENIR CLIENT
+   =========================== */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #b27a4e;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5a4633;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+  text-align: center;
+  background-color: #5a4633;
+  color: #fff;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+@media (max-width: 992px) {
+  .navbar .container {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  .hero {
+    margin-top: 120px; /* pour les écrans plus petits */
+  }
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+  .member img {
+    width: 160px;
+    height: 160px;
+  }
+}
