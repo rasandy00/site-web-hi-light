@@ -150,38 +150,10 @@ body{
 .member img{width:160px;height:160px;border-radius:50%;object-fit:cover;box-shadow:0 6px 18px rgba(90,70,51,0.08);transition:transform var(--transition)}
 .member img:hover{transform:translateY(-6px)}
 
-/* PARTNERS */
+/* PARTNERS */ 
 /* .partners-row{display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
 .partners-row img{width:120px;height:auto;opacity:0.9;transition:transform var(--transition),opacity var(--transition)}
-.partners-row img:hover{transform:scale(1.05);opacity:1} */
-/* ===========================
-   PARTENAIRES AVEC MÊME STYLE QUE ÉQUIPE
-   =========================== */
-.partenaires-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.partenaires-row img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  
-  /* Effet rond comme l’équipe */
-  border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-
-  /* Effet zoom comme l’équipe */
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.partenaires-row img:hover {
-  transform: scale(1.07);
-  opacity: 1;
-}
+.partners-row img:hover{transform:scale(1.05);opacity:1}
 
 /* CAROUSEL */
 .carousel{position:relative;max-width:900px;margin:0 auto;padding:20px}
@@ -231,4 +203,5 @@ body{
   .team-grid{gap:18px}
   .site-footer .container{flex-direction:column;gap:12px;text-align:center}
 }
+
 
