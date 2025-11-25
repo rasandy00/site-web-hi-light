@@ -169,21 +169,25 @@
 
     <!-- CONTACT -->
     <section id="contact" class="section reveal">
-      <h2>Contact</h2>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <p>📞 <a href="tel:+261345072913">+261 34 50 729 13</a></p>
-          <p>📧 <a href="mailto:rakotosandy00@gmail.com">hilight261@gmail.com</a></p>
-        </div>
+  <h2>Contact</h2>
 
-        <form action="mailto:rakotosandy00@gmail.com" method="post" class="contact-form" id="contactForm">
-          <input type="text" name="name" placeholder="Votre nom" required>
-          <input type="email" name="email" placeholder="Votre e-mail" required>
-          <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
-          <button type="submit" class="btn">Envoyer</button>
-        </form>
-      </div>
-    </section>
+  <div class="contact-grid">
+
+    <div class="contact-card">
+      <p>📞 <a href="tel:+261345072913">+261 34 50 729 13</a></p>
+      <p>📧 <a href="mailto:hilight261@gmail.com">hilight261@gmail.com</a></p>
+    </div>
+
+    <!-- Formulaire sans mailto -->
+    <form class="contact-form" id="contactForm">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre e-mail" required>
+      <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+
+  </div>
+</section>
 
     <!-- DEVENIR CLIENT -->
     <section id="client" class="section cta-section reveal">
@@ -206,6 +210,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
