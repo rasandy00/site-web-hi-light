@@ -9,6 +9,18 @@
   --container:1200px;
   --transition:300ms;
 }
+
+/* Empêche les contenus visuels de dépasser sur img, video et canvas */
+img,
+video,
+canvas {
+  overflow: hidden; /* au lieu de visible */
+  display: block;   /* optionnel : évite les espaces blancs sous les images */
+  max-width: 100%;  /* optionnel : rend les images responsives */
+  height: auto;     /* optionnel : conserve les proportions */
+}
+
+
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 body{
@@ -223,7 +235,7 @@ body{
 
 /* LOGO SHINE - using pseudo overlay */
 .logo{
-  position:relative;overflow:visible;
+  position:relative;overflow:hidden;
 }
 .logo::after{
   content:"";position:absolute;left:-50%;top:-10%;width:40%;height:120%;
@@ -244,6 +256,7 @@ body{
   .team-grid{gap:18px}
   .site-footer .container{flex-direction:column;gap:12px;text-align:center}
 }
+
 
 
 
