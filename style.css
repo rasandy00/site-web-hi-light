@@ -151,7 +151,7 @@ body{
 .member img:hover{transform:translateY(-6px)}
 
 /* PARTNERS */ 
-/* .partners-row{display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
+.partners-row{display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
 .partners-row img{width:120px;height:auto;opacity:0.9;transition:transform var(--transition),opacity var(--transition)}
 .partners-row img:hover{transform:scale(1.05);opacity:1}
 
@@ -203,5 +203,6 @@ body{
   .team-grid{gap:18px}
   .site-footer .container{flex-direction:column;gap:12px;text-align:center}
 }
+
 
 
